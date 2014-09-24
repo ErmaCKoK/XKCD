@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-W5-dpZ">
+                                <rect key="frame" x="20" y="20" width="560" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="AEV-Dv-cUi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R9L-aK-tP9">
+                                <rect key="frame" x="0.0" y="45" width="600" height="555"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moC-P9-esD">
+                                <rect key="frame" x="20" y="530" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2n1-Zl-k1u"/>
+                                    <constraint firstAttribute="width" constant="50" id="hk4-Rp-y2y"/>
+                                </constraints>
+                                <state key="normal" title="Prev">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadComic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0vi-vg-eIN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="758-EA-6GJ">
+                                <rect key="frame" x="530" y="530" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3aQ-kJ-rWS"/>
+                                    <constraint firstAttribute="height" constant="50" id="wnW-pE-uZq"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadComic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcq-l5-xOB"/>
+                                </connections>
+                            </button>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saU-5S-sWz">
+                                <rect key="frame" x="0.0" y="45" width="600" height="555"/>
+                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="R9L-aK-tP9" firstAttribute="top" secondItem="kLQ-W5-dpZ" secondAttribute="bottom" id="60U-fs-g6Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="saU-5S-sWz" secondAttribute="bottom" id="9f8-Vg-Ls0"/>
+                            <constraint firstItem="R9L-aK-tP9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BBK-fJ-Hre"/>
+                            <constraint firstItem="kLQ-W5-dpZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ElD-RG-Zcd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="758-EA-6GJ" secondAttribute="bottom" constant="20" id="JnD-7g-nwO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R9L-aK-tP9" secondAttribute="bottom" id="KEB-F1-KzA"/>
+                            <constraint firstItem="kLQ-W5-dpZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LBe-L1-5Us"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="moC-P9-esD" secondAttribute="bottom" constant="20" id="QRt-ZP-Ady"/>
+                            <constraint firstAttribute="trailing" secondItem="R9L-aK-tP9" secondAttribute="trailing" id="Red-Qh-X23"/>
+                            <constraint firstAttribute="trailing" secondItem="saU-5S-sWz" secondAttribute="trailing" id="TSj-so-5PZ"/>
+                            <constraint firstItem="saU-5S-sWz" firstAttribute="top" secondItem="kLQ-W5-dpZ" secondAttribute="bottom" id="Ycw-3O-9BC"/>
+                            <constraint firstItem="saU-5S-sWz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c2f-Ex-cOl"/>
+                            <constraint firstItem="moC-P9-esD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="p2v-EO-5to"/>
+                            <constraint firstAttribute="trailing" secondItem="758-EA-6GJ" secondAttribute="trailing" constant="20" id="wqt-rx-tWi"/>
+                            <constraint firstAttribute="trailing" secondItem="kLQ-W5-dpZ" secondAttribute="trailing" constant="20" id="ywi-KP-fEo"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8t3-fK-TNG" appends="YES" id="X9Z-BQ-UJo"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="comicImageView" destination="R9L-aK-tP9" id="FDx-hO-E1Q"/>
+                        <outlet property="nextButton" destination="758-EA-6GJ" id="Vaq-vi-fIX"/>
+                        <outlet property="prevButton" destination="moC-P9-esD" id="YxD-FU-rq5"/>
+                        <outlet property="titleLabel" destination="kLQ-W5-dpZ" id="v04-Yy-9mE"/>
+                        <outlet property="translateTextView" destination="saU-5S-sWz" id="yl6-WE-d9h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8t3-fK-TNG">
+                    <connections>
+                        <action selector="showTextView:" destination="BYZ-38-t0r" id="fZL-8a-zZw"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
